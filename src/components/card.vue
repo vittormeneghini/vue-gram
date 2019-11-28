@@ -69,8 +69,11 @@ export default {
     setFocus() {
       this.$refs.comment.focus();
     }
+  },
+  created(){
+    this.like()
   }
-};
+}
 </script>
 
 <style>
