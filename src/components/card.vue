@@ -77,7 +77,7 @@ export default {
 .main-card {
   display: grid;
   grid-template-rows: 1fr 5fr 0.6fr 0.4fr 0.1fr 0.6fr;
-  margin-bottom: 15%;
+  margin: 0% 30% 0% 30%;
 }
 
 .header-card {
@@ -121,6 +121,10 @@ i:hover {
   height: 100%;
 }
 
+.fa-comment{
+  color: grey;
+}
+
 .liked {
   color: red;
 }
@@ -152,5 +156,10 @@ i:hover {
 .div-input-comment input {
   width: 100%;
   border: none;
+}
+@media only screen and (max-width: 425px) {
+  .main-card {
+    margin: 0%;
+  }
 }
 </style>
